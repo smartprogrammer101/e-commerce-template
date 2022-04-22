@@ -265,20 +265,27 @@ header {
 } */
 
 .carousel-button {
+    font-size: 30px;
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     z-index: 1;
-    background-color: aqua;
-    padding: 3em;
-    transform: translateY(-50%);
+    padding: 1.5em;
+    /* background-color: red; */
     cursor: pointer;
+}
+.carousel-button i {
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.2);
+    aspect-ratio: 1;
 }
 
 #prev-button {
-    left: 2em;
+    left: 0;
 }
 #next-button {
-    right: 2em;
+    right: 0;
 }
 @media screen and (min-width: 750px) {
     header {
