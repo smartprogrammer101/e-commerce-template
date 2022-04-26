@@ -53,7 +53,6 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // Function when carousel interval timer clocks
     function CarouselTimer() {
-        console.log(numberOfFeaturedImages);
         if (visbleImage == numberOfFeaturedImages) {
             visbleImage = 1;
             transitionFeatueredImages(visbleImage)

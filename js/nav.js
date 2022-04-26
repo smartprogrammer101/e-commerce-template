@@ -6,7 +6,6 @@ const filterListContainer = document.querySelector(".categories-filter-container
 
 let left = dropdownButton.offsetLeft;
 function positionDropdownMenu(){
-    console.log(dropdownButton.offsetLeft);
     filterListContainer.style.marginLeft = left+'px';
 }
 positionDropdownMenu()
@@ -34,7 +33,6 @@ class FormHandling {
     toggleDropdownList() {
         if (filterListContainer.dataset.visible == "false") {
             filterListContainer.dataset.visible = "true";
-            // console.log(this.filterList);
             this.filterList.forEach(list => {
                 list.addEventListener("click", this.updateDropdownText);
             })

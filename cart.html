@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/solid.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/v4-shims.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <div class="top-bar flex align-center">
+        <a href="#" class="logo">ezone</a>
+        
+        <form class="search-form flex-no-gap">
+            <button type="button" class="search-dropdown flex centered">
+                <span>All</span>
+                <i class="fa fa-angle-down"></i>
+            </button>
+            <input type="text" class="search-input">
+            <button type="submit" class="search-submit-button flex centered">
+                <i class="fa fa-search" style="font-size: 20px;"></i>
+            </button>
+        </form>
+
+        <div class="link-group flex centered">
+            <a href="#">Account</a>
+            <a id= "cart" class="icon flex centered" style="--gap: .2em;" href="cart.html">
+                <i class="fa fa-shopping-cart fa-opencart" style="font-size: 20px;"></i>
+                Cart
+            </a>
+            <span class="number-of-item-in-cart">0</span>
+        </div>
+
+    </div>
+    <div class="categories-filter-container" data-visible="false">
+        <ul class="categories-filter-list">
+            <li>Phone</li>
+            <li>Clothing</li>
+            <li>Computers</li>
+            <li>Food</li>
+            <li>Electronics and Gaming</li>
+            <li>Food</li>
+            <li>Electronics</li>
+            <li>Food</li>
+            <li>Electronics</li>
+            <li>Food</li>
+            <li>Electronics</li>
+            <li>Food</li>
+            <li>Electronics</li>
+        </ul>
+    </div>
+
+
+    <main>
+        <div class="main-container">
+            <div class="all-cart-items-container">
+                <h1 class="shopping-cart-heading">Shopping Cart</h1>
+                <div class="shopping-cart-price">Price</div>
+                <div class="wrapper flex space-between">
+                    <div class="content">
+                        <div class="shopping-cart-item-image-container">
+                            <img src="L1.jpg" alt="" class="shopping-cart-item-image">
+                        </div>
+                        <div class="shopping-cart-item-detail flex flex-column">
+                            <h2><a href="#">Spider-Man: No Way Home [4K UHD]Spider-Man: No Way Home [4K UHD]</a></h2>
+                            <p class="in-stock">In stock</p>
+                            <div class="actions flex">
+                                <form action="" method="post">
+                                    <select onchange="this.form.submit()" name="shopping-cart-item-quantity" id="item-quantity">
+                                        <option value="1">Qty 1</option>
+                                        <option value="2">Qty 2</option>
+                                        <option value="3">Qty 3</option>
+                                        <option value="4">Qty 4</option>
+                                        <option value="5">Qty 5</option>
+                                        <option value="6">Qty 6</option>
+                                    </select>
+                                </form>
+                                <form action="" method="post">
+                                    <input type="hidden" name="item_id" value="any">
+                                    <button class="delete-item" type="submit">Delete</button>
+                                </form>
+                            </div>
+                            <div class="color">Color:
+                                <span class="item-color">White</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-price">$2000</div>
+                </div>
+                <div class="total-price">
+                    <span>Subtotal (16 items): #302</span>
+                </div>
+            </div>
+            <div class="proceed-checkout flex flex-column">
+                <div class="total-price">
+                    <span>Subtotal (16 items): #302</span>
+                </div>
+                <a href="#" class="checkout-button button">Proceed&nbsp;to&nbsp;checkout</a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/nav.js"></script>
+    <script src="js/nav-toggle.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html>
